@@ -1067,6 +1067,84 @@
 						</instructions-diff>
 					</instructions-container>
 				</instructions-block>
+
+				<!-- OPEN PROPS -->
+				<input type="radio" id="breakpoint-openProps" name="breakpoints" value="openProps" />
+				<label data-sm="column" for="breakpoint-openProps" title="Open Props">
+					<img data-sm="middle rspImg" src="/img/openPropsLogo.svg" alt="Open Props logo" />
+				</label>
+				<instructions-block data-sm="hide">
+					<instructions-container data-sm="column" data-md="2column">
+						<instructions-table>
+							<h1>
+								<a
+									href="https://github.com/argyleink/open-props/blob/main/src/props.media.css"
+									target="_blank"
+									rel="external noopener noreferrer"
+									title="Link to Default breakpoints"
+								>
+									Open Props
+								</a>
+							</h1>
+
+							<table>
+								<thead>
+									<tr>
+										<th align="left">Prefix</th>
+										<th align="left">Min-width</th>
+										<th align="left">Max-width</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td align="left">xxs</td>
+										<td align="left">(no min)</td>
+										<td align="left">239px</td>
+									</tr>
+									<tr>
+										<td align="left">xs</td>
+										<td align="left">240px</td>
+										<td align="left">359px</td>
+									</tr>
+									<tr>
+										<td align="left">sm</td>
+										<td align="left">360px</td>
+										<td align="left">479px</td>
+									</tr>
+									<tr>
+										<td align="left">md</td>
+										<td align="left">480px</td>
+										<td align="left">767px</td>
+									</tr>
+									<tr>
+										<td align="left">lg</td>
+										<td align="left">768px</td>
+										<td align="left">1023px</td>
+									</tr>
+									<tr>
+										<td align="left">xl</td>
+										<td align="left">1024px</td>
+										<td align="left">1439px</td>
+									</tr>
+									<tr>
+										<td align="left">xxl</td>
+										<td align="left">1440px</td>
+										<td align="left">(no max)</td>
+									</tr>
+								</tbody>
+							</table>
+						</instructions-table>
+
+						<instructions-diff>
+							<h2>Diff from original</h2>
+							<p>For logical consistency across frameworks' breakpoints:</p>
+							<ol>
+								<li>The max-width for each breakpoint is decreased by 1px</li>
+								<li>The last breakpoint has no maximum width</li>
+							</ol>
+						</instructions-diff>
+					</instructions-container>
+				</instructions-block>
 			</frameworks-logos>
 		</main>
 
