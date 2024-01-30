@@ -31,3 +31,8 @@ header {
 	z-index: 1;
 }
 
+header > a {
+	display: inherit;
+	width: 50px;
+}
+
