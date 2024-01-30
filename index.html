@@ -1664,6 +1664,82 @@
 						</instructions-diff>
 					</instructions-container>
 				</instructions-block>
+
+				<!-- UIkit -->
+				<input type="radio" id="breakpoint-uikit" name="breakpoints" value="uikit" />
+				<label data-sm="column" for="breakpoint-uikit" title="UIkit">
+					<img data-sm="middle rspImg" src="/img/uikitLogo.svg" alt="UIkit logo" />
+				</label>
+				<instructions-block data-sm="hide">
+					<instructions-container data-sm="column" data-md="2column">
+						<instructions-table>
+							<h1>
+								<a
+									href="https://getuikit.com/docs/column#responsive"
+									target="_blank"
+									rel="external noopener noreferrer"
+									title="Link to Default breakpoints"
+								>
+									UIkit
+								</a>
+							</h1>
+
+							<table>
+								<thead>
+									<tr>
+										<th align="left">Prefix</th>
+										<th align="left">Min-width</th>
+										<th align="left">Max-width</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td align="left">sm</td>
+										<td align="left">(no min)</td>
+										<td align="left">639px</td>
+									</tr>
+									<tr>
+										<td align="left">md</td>
+										<td align="left">640px</td>
+										<td align="left">959px</td>
+									</tr>
+									<tr>
+										<td align="left">lg</td>
+										<td align="left">960px</td>
+										<td align="left">1199px</td>
+									</tr>
+									<tr>
+										<td align="left">xl</td>
+										<td align="left">1200px</td>
+										<td align="left">1599px</td>
+									</tr>
+									<tr>
+										<td align="left">xxl</td>
+										<td align="left">1600px</td>
+										<td align="left">(no max)</td>
+									</tr>
+								</tbody>
+							</table>
+						</instructions-table>
+
+						<instructions-diff>
+							<h2>Diff from original</h2>
+							<p>For logical consistency across frameworks' breakpoints:</p>
+							<ol>
+								<li>
+									Added
+									<strong>sm</strong>
+									breakpoint:
+									<strong>0 to 639px</strong>
+								</li>
+								<li>Replaced s with md</li>
+								<li>Replaced m with lg</li>
+								<li>Renamed l to xl</li>
+								<li>Renamed xl to xxl</li>
+							</ol>
+						</instructions-diff>
+					</instructions-container>
+				</instructions-block>
 			</frameworks-logos>
 		</main>
 
