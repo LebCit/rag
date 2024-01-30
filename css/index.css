@@ -18,3 +18,16 @@
 	background-color: var(--grayCool-3);
 	color: var(--grayCool-11);
 }
+
+/* HEADER */
+header {
+	background-color: var(--grayCool-4);
+	border-bottom: 2.5px solid var(--grayCool-10);
+	display: grid;
+	font-style: italic;
+	grid-template-columns: auto 1fr auto auto !important;
+	position: sticky;
+	top: 0;
+	z-index: 1;
+}
+
