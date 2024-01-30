@@ -1740,6 +1740,82 @@
 						</instructions-diff>
 					</instructions-container>
 				</instructions-block>
+
+				<!-- VANILLA -->
+				<input type="radio" id="breakpoint-vanilla" name="breakpoints" value="vanilla" />
+				<label data-sm="column" for="breakpoint-vanilla" title="Vanilla">
+					<img data-sm="middle rspImg" src="/img/vanillaLogo.svg" alt="Vanilla logo" />
+				</label>
+				<instructions-block data-sm="hide">
+					<instructions-container data-sm="column" data-md="2column">
+						<instructions-table>
+							<h1>
+								<a
+									href="https://vanillaframework.io/docs/settings/breakpoint-settings"
+									target="_blank"
+									rel="external noopener noreferrer"
+									title="Link to Default breakpoints"
+								>
+									Vanilla
+								</a>
+							</h1>
+
+							<table>
+								<thead>
+									<tr>
+										<th align="left">Prefix</th>
+										<th align="left">Min-width</th>
+										<th align="left">Max-width</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td align="left">xs</td>
+										<td align="left">(no min)</td>
+										<td align="left">459px</td>
+									</tr>
+									<tr>
+										<td align="left">sm</td>
+										<td align="left">460px</td>
+										<td align="left">619px</td>
+									</tr>
+									<tr>
+										<td align="left">md</td>
+										<td align="left">620px</td>
+										<td align="left">1035px</td>
+									</tr>
+									<tr>
+										<td align="left">lg</td>
+										<td align="left">1036px</td>
+										<td align="left">1680px</td>
+									</tr>
+									<tr>
+										<td align="left">xl</td>
+										<td align="left">1681px</td>
+										<td align="left">(no max)</td>
+									</tr>
+								</tbody>
+							</table>
+						</instructions-table>
+
+						<instructions-diff>
+							<h2>Diff from original</h2>
+							<p>For logical consistency across frameworks' breakpoints:</p>
+							<ol>
+								<li>
+									Added
+									<strong>xs</strong>
+									breakpoint:
+									<strong>0 to 459px</strong>
+								</li>
+								<li>Replaced x-small with sm</li>
+								<li>Replaced small with md</li>
+								<li>Renamed large to lg</li>
+								<li>Renamed x-large to xl</li>
+							</ol>
+						</instructions-diff>
+					</instructions-container>
+				</instructions-block>
 			</frameworks-logos>
 		</main>
 
