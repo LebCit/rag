@@ -268,13 +268,77 @@
 				<li>The breakpoints of 20 frameworks alphabetically displayed</li>
 			</ul>
 
-			<frameworks-logos
-				id="grid"
-				data-sm="2column pad gap"
-				data-md="4column"
-				data-lg="6column"
-				data-xl="8column"
-			></frameworks-logos>
+			<frameworks-logos id="grid" data-sm="2column pad gap" data-md="4column" data-lg="6column" data-xl="8column">
+				<!-- DEFAULT -->
+				<input type="radio" id="breakpoint-default" name="breakpoints" value="default" checked />
+				<label data-sm="column" for="breakpoint-default" title="Default Responsive Attributes">
+					<img
+						data-sm="middle rspImg mjt"
+						src="/img/matthew-james-taylor.svg"
+						alt="Image of Matthew James Taylor"
+					/>
+				</label>
+				<instructions-block data-sm="hide">
+					<instructions-container data-sm="column" data-md="2column">
+						<instructions-table>
+							<h1>
+								<a
+									href="https://matthewjamestaylor.com/responsive-attributes"
+									target="_blank"
+									rel="external noopener noreferrer"
+									title="Link to Default breakpoints"
+								>
+									Default
+								</a>
+							</h1>
+
+							<table>
+								<thead>
+									<tr>
+										<th align="left">Prefix</th>
+										<th align="left">Min-width</th>
+										<th align="left">Max-width</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>sm</td>
+										<td>(no min)</td>
+										<td>767px</td>
+									</tr>
+									<tr>
+										<td>md</td>
+										<td>768px</td>
+										<td>1023px</td>
+									</tr>
+									<tr>
+										<td>lg</td>
+										<td>1024px</td>
+										<td>1279px</td>
+									</tr>
+									<tr>
+										<td>xl</td>
+										<td>1280px</td>
+										<td>(no max)</td>
+									</tr>
+								</tbody>
+							</table>
+						</instructions-table>
+
+						<instructions-diff>
+							<h2>Diff from original</h2>
+							<ol>
+								<li>
+									Added
+									<strong>xl</strong>
+									breakpoint:
+									<strong>1280px and above</strong>
+								</li>
+							</ol>
+						</instructions-diff>
+					</instructions-container>
+				</instructions-block>
+			</frameworks-logos>
 		</main>
 
 		<footer></footer>
