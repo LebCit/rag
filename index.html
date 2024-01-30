@@ -1587,6 +1587,83 @@
 						</instructions-diff>
 					</instructions-container>
 				</instructions-block>
+
+				<!-- TAILWIND -->
+				<input type="radio" id="breakpoint-tailwind" name="breakpoints" value="tailwind" />
+				<label data-sm="column" for="breakpoint-tailwind" title="Tailwind">
+					<img data-sm="middle rspImg" src="/img/tailwindLogo.svg" alt="Tailwind logo" />
+				</label>
+				<instructions-block data-sm="hide">
+					<instructions-container data-sm="column" data-md="2column">
+						<instructions-table>
+							<h1>
+								<a
+									href="https://tailwindcss.com/docs/responsive-design"
+									target="_blank"
+									rel="external noopener noreferrer"
+									title="Link to Default breakpoints"
+								>
+									Tailwind
+								</a>
+							</h1>
+
+							<table>
+								<thead>
+									<tr>
+										<th align="left">Prefix</th>
+										<th align="left">Min-width</th>
+										<th align="left">Max-width</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td align="left">xs</td>
+										<td align="left">(no min)</td>
+										<td align="left">639px</td>
+									</tr>
+									<tr>
+										<td align="left">sm</td>
+										<td align="left">640px</td>
+										<td align="left">767px</td>
+									</tr>
+									<tr>
+										<td align="left">md</td>
+										<td align="left">768px</td>
+										<td align="left">1023px</td>
+									</tr>
+									<tr>
+										<td align="left">lg</td>
+										<td align="left">1024px</td>
+										<td align="left">1279px</td>
+									</tr>
+									<tr>
+										<td align="left">xl</td>
+										<td align="left">1280px</td>
+										<td align="left">1535px</td>
+									</tr>
+									<tr>
+										<td align="left">xxl</td>
+										<td align="left">1536px</td>
+										<td align="left">(no max)</td>
+									</tr>
+								</tbody>
+							</table>
+						</instructions-table>
+
+						<instructions-diff>
+							<h2>Diff from original</h2>
+							<ol>
+								<li>
+									Added
+									<strong>xs</strong>
+									breakpoint:
+									<strong>0 to 639px</strong>
+								</li>
+								<li>Renamed 2xl to xxl</li>
+							</ol>
+						</instructions-diff>
+					</instructions-container>
+				</instructions-block>
 			</frameworks-logos>
 		</main>
 
