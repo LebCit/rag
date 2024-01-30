@@ -1,0 +1,20 @@
+:root {
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-size: calc(15px + 0.390625vw);
+	line-height: 2;
+
+	--grayCool-1: #fcfcfd;
+	--grayCool-2: #f9f9fb;
+	--grayCool-3: #eff1f5;
+	--grayCool-4: #dcdfea;
+	--grayCool-5: #b9c0d4;
+	--grayCool-6: #7d89b0;
+	--grayCool-7: #5d6b98;
+	--grayCool-8: #4a5578;
+	--grayCool-9: #404968;
+	--grayCool-10: #30374f;
+	--grayCool-11: #111322;
+
+	background-color: var(--grayCool-3);
+	color: var(--grayCool-11);
+}
