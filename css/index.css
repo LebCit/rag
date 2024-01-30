@@ -47,3 +47,42 @@ header > a {
 		font-size: xx-large;
 	}
 }
+
+/* DETAILS */
+details {
+	background-color: var(--grayCool-4);
+	border: 2.5px solid var(--grayCool-8);
+	border-radius: 5px;
+	color: var(--grayCool-10);
+	padding: 0 1rem;
+	position: relative;
+	transition: background-color 0.15s;
+}
+
+details > :last-child {
+	margin-bottom: 1rem;
+}
+
+details::before {
+	border-radius: inherit;
+	box-shadow: 0 0.25em 0.5rem var(--grayCool-10);
+	content: "";
+	height: 100%;
+	left: 0;
+	opacity: 0.15;
+	pointer-events: none;
+	position: absolute;
+	top: 0;
+	transition: opacity 0.2s;
+	width: 100%;
+	z-index: -1;
+}
+
+details[open] {
+	background-color: var(--grayCool-2);
+}
+
+details[open]::before {
+	opacity: 0.6;
+}
+
