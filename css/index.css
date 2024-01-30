@@ -86,3 +86,40 @@ details[open]::before {
 	opacity: 0.6;
 }
 
+details[open] > summary {
+	border-bottom: 2.5px var(--grayCool-8) solid;
+}
+
+summary {
+	cursor: pointer;
+	display: block;
+	font-weight: bold;
+	padding: 1rem 2rem 1rem 0;
+	position: relative;
+}
+
+summary::before,
+summary::after {
+	background-color: currentColor;
+	content: "";
+	height: 2px;
+	position: absolute;
+	right: 0;
+	text-align: right;
+	top: 50%;
+	transform: translateY(-50%);
+	transition: transform 0.2s ease-in-out;
+	width: 0.75rem;
+}
+
+summary::after {
+	transform: translateY(-50%) rotate(90deg);
+}
+
+details[open] summary::after {
+	transform: translateY(-50%) rotate(180deg);
+}
+
+summary::-webkit-details-marker {
+	display: none;
+}
