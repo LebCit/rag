@@ -198,3 +198,17 @@ button {
 	font-size: inherit;
 }
 
+header > button {
+	background-color: var(--grayCool-2);
+	border-color: var(--grayCool-10);
+	border-radius: 5px;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+	transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+}
+
+header > button:hover {
+	background-color: var(--grayCool-10);
+	border-color: var(--grayCool-2);
+	color: var(--grayCool-2);
+}
+
