@@ -7,6 +7,9 @@ import { getClickedRow } from "./helpers/getClickedRow.js"
 
 // Add an event listener to the document that will trigger when the DOM content is fully loaded.
 document.addEventListener("DOMContentLoaded", () => {
+	// Close other <details> tags
+	closeOtherDetails()
+
 	// Select all labels within the grid
 	const labels = document.querySelectorAll("#grid label")
 
