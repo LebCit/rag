@@ -234,3 +234,6 @@ figure img {
 	border-radius: 5px;
 }
 
+figure > figcaption > * {
+	margin: 0;
+}
