@@ -143,3 +143,6 @@ frameworks-logos > label > img[data-sm$="mjt"] {
 	border-radius: 50%;
 }
 
+frameworks-logos > input:checked + label {
+	border: 2.5px var(--grayCool-9) solid;
+}
