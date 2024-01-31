@@ -221,3 +221,18 @@ async function generateAndWriteStylesToFile(breakpoints, desiredFilePath) {
 	}
 }
 
+/**
+ * Retrieves data based on the selection of a radio button group.
+ *
+ * @param {string} name The name attribute of the radio button group.
+ * @param {object} valueMap An object mapping radio button values to their corresponding data.
+ * @returns {any} The data associated with the selected radio button, or undefined if no selection is made.
+ */
+function getValueFromSelection(name, valueMap) {
+	// Get the selected radio button value
+	const selectedValue = document.querySelector(`input[name="${name}"]:checked`)?.value
+
+	// Check if a selection is made and return the corresponding value
+	return selectedValue ? valueMap[selectedValue] : undefined
+}
+
