@@ -186,3 +186,7 @@ th {
 	font-weight: bold; /* Bold text for headers */
 }
 
+tr:nth-child(even) {
+	/* Even rows */
+	background-color: var(--grayCool-4); /* Lighter dark gray background for even rows */
+}
