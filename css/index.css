@@ -48,6 +48,11 @@ header > a {
 	}
 }
 
+/* ANCHORS IN MAIN SECTION */
+main a {
+	color: #004bae;
+}
+
 /* DETAILS */
 details {
 	background-color: var(--grayCool-4);
