@@ -134,6 +134,11 @@ summary::-webkit-details-marker {
 	word-break: keep-all;
 }
 
+/* CODE */
+code {
+	background-color: var(--grayCool-9);
+	color: var(--grayCool-3);
+}
 
 /* FRAMEWORKS LOGOS */
 frameworks-logos > input {
