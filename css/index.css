@@ -168,3 +168,10 @@ instructions-container > instructions-table > *,
 instructions-container > instructions-diff > * {
 	margin: 0;
 }
+
+/* TABLE */
+table {
+	border-collapse: collapse; /* Remove spacing between cells */
+	width: 100%; /* Full width */
+}
+
