@@ -23,4 +23,7 @@ document.addEventListener("DOMContentLoaded", () => {
 		})
 	})
 
+	// Call the `createResponsiveAttributesFile` function, passing in the CSS selector '[data-btn="generate-responsive-attributes"]' as an argument.
+	// This function creates a file containing responsive attributes for use in styling.
+	createResponsiveAttributesFile('[data-btn="generate-responsive-attributes"]')
 })
