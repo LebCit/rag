@@ -190,3 +190,11 @@ tr:nth-child(even) {
 	/* Even rows */
 	background-color: var(--grayCool-4); /* Lighter dark gray background for even rows */
 }
+
+/* BUTTON */
+button {
+	cursor: pointer;
+	font-family: inherit;
+	font-size: inherit;
+}
+
