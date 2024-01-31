@@ -237,3 +237,10 @@ figure img {
 figure > figcaption > * {
 	margin: 0;
 }
+
+/* FOOTER */
+footer {
+	background-color: var(--grayCool-5);
+	border-top: 2.5px solid var(--grayCool-10);
+}
+
