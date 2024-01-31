@@ -1,5 +1,7 @@
 // Import the `createResponsiveAttributesFile` function from the `responsiveAttributes.js` file.
 import { createResponsiveAttributesFile } from "./responsiveAttributes.js"
+// Import the `closeOtherDetails` function to manage the behavior of details elements
+import { closeOtherDetails } from "./helpers/closeOtherDetails.js"
 // Import the `getClickedRow` function from the "getClickedRow.js" file
 import { getClickedRow } from "./helpers/getClickedRow.js"
 
