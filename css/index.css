@@ -227,3 +227,10 @@ generate-button > button:hover {
 	color: var(--grayCool-2);
 	transition: 0.5s;
 }
+
+/* FIGURE */
+figure img {
+	border: 2.5px solid var(--grayCool-11);
+	border-radius: 5px;
+}
+
