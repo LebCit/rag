@@ -181,3 +181,8 @@ td {
 	border: 1px solid var(--grayCool-11); /* Add a dark gray border */
 }
 
+th {
+	background-color: var(--grayCool-5); /* Light gray background for headers */
+	font-weight: bold; /* Bold text for headers */
+}
+
