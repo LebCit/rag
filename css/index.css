@@ -129,6 +129,12 @@ summary::-webkit-details-marker {
 	display: none;
 }
 
+/* ORDERED LIST IN DETAILS */
+#added-css-rules {
+	word-break: keep-all;
+}
+
+
 /* FRAMEWORKS LOGOS */
 frameworks-logos > input {
 	clip: rect(0 0 0 0);
