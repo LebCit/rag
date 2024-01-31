@@ -236,3 +236,24 @@ function getValueFromSelection(name, valueMap) {
 	return selectedValue ? valueMap[selectedValue] : undefined
 }
 
+/**
+ * Attaches a click event listener to specific HTML elements, triggering the generation and saving of CSS grid styles when clicked.
+ *
+ * @param {string} HTMLelements - The CSS selector of the HTML elements to attach the event listener to.
+ */
+export const createResponsiveAttributesFile = (HTMLelements) => {
+	// Selects the specified HTML elements.
+	const elements = document.querySelectorAll(HTMLelements)
+
+	// Loops through the elements.
+	elements.forEach((element) => {
+		// Adds a click event listener to the element.
+		element.addEventListener("click", () => {
+			// Retrieves the breakpoints value based on the user's selection from the radio button group named "breakpoints",
+			// using the predefinedBreakpoints object to map values to their corresponding breakpoints.
+			const breakpoints = getValueFromSelection("breakpoints", predefinedBreakpoints)
+			// Calls the function to generate and save CSS grid styles when the element is clicked.
+			generateAndWriteStylesToFile(breakpoints)
+		})
+	})
+}
