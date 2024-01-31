@@ -212,3 +212,18 @@ header > button:hover {
 	color: var(--grayCool-2);
 }
 
+generate-button > button {
+	background: var(--grayCool-2);
+	border: 0.4em solid var(--grayCool-10);
+	border-radius: 2em 0 2em 0;
+	color: black;
+	font-weight: bold;
+	opacity: 1;
+	padding: 1em 2em;
+	transition: 0.5s;
+}
+generate-button > button:hover {
+	background: var(--grayCool-10);
+	color: var(--grayCool-2);
+	transition: 0.5s;
+}
