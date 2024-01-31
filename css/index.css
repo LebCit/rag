@@ -123,3 +123,15 @@ details[open] summary::after {
 summary::-webkit-details-marker {
 	display: none;
 }
+
+/* FRAMEWORKS LOGOS */
+frameworks-logos > input {
+	clip: rect(0 0 0 0);
+	clip-path: inset(50%);
+	height: 1px;
+	overflow: hidden;
+	position: fixed;
+	white-space: nowrap;
+	width: 1px;
+}
+
