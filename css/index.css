@@ -244,3 +244,7 @@ footer {
 	border-top: 2.5px solid var(--grayCool-10);
 }
 
+footer a {
+	color: #02306c;
+}
+
