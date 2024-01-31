@@ -175,3 +175,49 @@ https://matthewjamestaylor.com/responsive-attributes
 	return allRules
 }
 
+/**
+ * Generates CSS grid rules based on provided breakpoints and prompts the user to save them as a CSS file.
+ *
+ * @param {Object<string, [number, string]>} breakpoints - An object defining breakpoints prefixes and their corresponding widths in pixels with an optional label for the breakpoint.
+ * @param {string} [desiredFilePath] - An optional starting directory for the save file picker. Defaults to "desktop".
+ * @returns {Promise<void>} A promise that resolves when the styles are successfully written to a file, or rejects if an error occurs.
+ */
+async function generateAndWriteStylesToFile(breakpoints, desiredFilePath) {
+	try {
+		// Generates the CSS grid rules content.
+		const styles = createGridRules(breakpoints)
+
+		// Creates a Blob (Binary Large Object) to represent the CSS content as a file.
+		const cssBlob = new Blob([styles], { type: "text/css" })
+
+		// Handle file saving based on browser compatibility:
+		let fileHandle
+		if (window.showSaveFilePicker) {
+			// Use File System Access API for compatible browsers
+			fileHandle = await window.showSaveFilePicker({
+				types: [{ description: "CSS files", accept: { "text/css": [".css"] } }],
+				startIn: desiredFilePath || "desktop", // Optional starting directory
+				suggestedName: "responsive-attributes.css", // Optional suggested filename
+			})
+		} else {
+			// Use a temporary link for Firefox
+			const link = document.createElement("a")
+			link.href = URL.createObjectURL(cssBlob)
+			link.download = "responsive-attributes.css"
+			link.click()
+			URL.revokeObjectURL(link.href)
+			return // No need to continue for Firefox
+		}
+
+		// Writes the CSS content to the selected file if a file handle is obtained (for File System Access API).
+		if (fileHandle !== null) {
+			const writableStream = await fileHandle.createWritable()
+			await writableStream.write(cssBlob)
+			await writableStream.close()
+			console.log("Styles successfully written to file!")
+		}
+	} catch (error) {
+		console.error("Error writing styles to file:", error)
+	}
+}
+
