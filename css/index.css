@@ -139,3 +139,7 @@ frameworks-logos > label {
 	cursor: pointer;
 }
 
+frameworks-logos > label > img[data-sm$="mjt"] {
+	border-radius: 50%;
+}
+
