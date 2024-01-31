@@ -248,3 +248,7 @@ footer a {
 	color: #02306c;
 }
 
+footer rag-logo-text {
+	font-style: italic;
+	font-weight: bold;
+}
