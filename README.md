@@ -1,5 +1,5 @@
 <div align="center">
-	<a href="https://simple-markdown-editor.pages.dev/" title="Link to SME App">
+	<a href="https://responsive-attributes-generator.pages.dev/" title="Link to Responsive Attributes Generator App">
 		<img src="./img/favicon.svg" alt="Responsive Attributes Generator Logo" width="100px" />
 	</a>
 	<h1>Responsive Attributes Generator</h1>
